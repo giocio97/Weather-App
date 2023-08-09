@@ -1,0 +1,48 @@
+.header-card {
+    display: flex;
+    justify-content: space-between;
+
+}
+.city-card {
+
+    text-align: center;
+}
+
+.icon-temp {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    align-items: center;
+}
+
+.temperature {
+    font-weight: 600;
+    font-size: 70px;
+    margin: 10px 0;
+    letter-spacing: -5px;
+    text-align: center;
+}
+
+
+
+.icon {
+    font-size: 30px;
+    padding: 10px;
+}
+
+@media screen and (min-width: 721px) {
+    .icon-temp {
+        flex-direction:column-reverse;
+        
+    }
+    .icon {
+        font-size: 50px;
+        
+    }
+    .temperature {
+        font-weight: 600;
+        font-size: 40px;
+        letter-spacing: -5px;
+        text-align: right;
+    }
+}

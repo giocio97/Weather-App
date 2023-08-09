@@ -1,0 +1,42 @@
+form {
+
+  display: flex;
+  max-width: 350px;
+  
+  
+}
+
+input {
+  flex-grow: 1;
+  border: none;
+  border-radius: 20px;
+  padding: 30px;
+  font-size: 20px;
+  width: 360px;
+  
+
+
+
+}
+
+
+input:focus {
+  outline: none;
+}
+
+
+
+button {
+  border-radius: 50px;
+  border: 1px solid transparent ;
+  background: linear-gradient(#5679E8, #6FA5EA);
+  color: white;
+  padding: 5px;
+  font-size: 30px;
+  margin-right: 5px;
+  position: relative;
+  top: 0;
+  right: 41px;
+  
+  
+}

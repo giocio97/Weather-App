@@ -1,0 +1,24 @@
+.footer-bar {
+    border-radius: 16px;
+    margin: 20px;
+    background-color: #ffffff;
+    color: #797979;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: -3px 4px 0px 0px rgb(0 0 0 /30%);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+
+
+
+}
+
+.icon {
+    font-size: 50px;
+    padding: 10px;
+    cursor: pointer;
+}

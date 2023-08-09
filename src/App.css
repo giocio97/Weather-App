@@ -1,38 +1,124 @@
-.App {
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+
+
+
+
+}
+
+.city-list-bg {
+  background-color: #f1f1f1;
+  height: 100vh;
+}
+
+.main-card-bg {
+  background: linear-gradient(#5679E8, #6FA5EA);
+  color: white;
+  height: 100vh;
+}
+
+.app {
+  max-width: 100%;
+  padding: 10px;
+  color: white;
+
+}
+
+
+.city-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+
+}
+
+.city-list>h2,
+.addCity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(3, 3, 109);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.city-item {
+  background: linear-gradient(90deg, rgb(25, 138, 237) 0%, rgba(154, 201, 227, 1) 0%, rgba(138, 187, 219, 1) 60%);
+  color: #f1f1f1;
+  border-radius: 20px;
+  box-shadow: 5px 1px 10px rgb(0 0 0 /30%);
+  padding: 5px;
+  max-width: 360px;
+  margin: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.temp-item {
+  font-weight: 600;
+  font-size: 30px;
+  letter-spacing: 1px;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.weather-forecast {
+  margin-top: 20px;
+}
+
+.forecast-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.weather-forecast {
+  margin-top: 20px;
+}
+
+.forecast-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.forecast-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 5px;
+  width: 150px;
+  text-align: center;
+}
+
+.daily-forecast-timeline {
+  margin-bottom: 20px;
+}
+
+.vertical-timeline {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.timeline-item {
+  border: 1px solid #ccc;
+  padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+
+@media screen and (min-width: 721px) {
+  body {
+    background-color: #f1f1f1;
   }
-  to {
-    transform: rotate(360deg);
+
+  .city-list>h2 {
+    display: none;
   }
+
+
+
 }
