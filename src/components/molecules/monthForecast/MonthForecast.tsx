@@ -56,26 +56,28 @@ const WeatherMonthForecast: React.FC = () => {
     };
 
     return (
-        <div className='month' >
-            {forecastData.map((forecast, index) => (
-                <div key={index} className='weather-card-month'>
-                    <div>
-                        <h2 className='day'>{formatDate(forecast.dt_txt)}</h2>
-                        {getWeatherIcon(forecast.weather[0]?.description)}
+        <div className='month-container'>
+            <div className='month' >
+                {forecastData.map((forecast, index) => (
+                    <div key={index} className='weather-card-month'>
+                        <div>
+                            <h2 className='day'>{formatDate(forecast.dt_txt)}</h2>
+                            {getWeatherIcon(forecast.weather[0]?.description)}
+
+                        </div>
+                        <div>
+                            <p className='temp'>{Math.round(forecast.main.temp)} °C</p>
+                            <p className='description'>{forecast.weather[0]?.description}</p>
+                            <p className='temp-range'> The high will be {Math.round(forecast.main.temp_max)} °C, the low will be
+                                {Math.round(forecast.main.temp_min)} °C.
+                            </p>
+                            <p className='humidity'>Humidity: {forecast.main.humidity}%</p>
+                        </div>
+
 
                     </div>
-                    <div>
-                        <p className='temp'>{Math.round(forecast.main.temp)} °C</p>
-                        <p className='description'>{forecast.weather[0]?.description}</p>
-                        <p className='temp-range'> The high will be {Math.round(forecast.main.temp_max)} °C, the low will be
-                            {Math.round(forecast.main.temp_min)} °C.
-                        </p>
-                        <p className='humidity'>Humidity: {forecast.main.humidity}%</p>
-                    </div>
-
-
-                </div>
-            ))}
+                ))}
+            </div>
         </div>
     );
 };

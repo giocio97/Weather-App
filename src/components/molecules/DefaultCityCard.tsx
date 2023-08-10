@@ -5,7 +5,7 @@ interface DefaultCityCardProps {
   cityName: string;
   temperature: number;
   description: string;
-  currentTime: string; 
+  currentTime: string;
   day: string;
   onClick: () => void;
 }
@@ -17,7 +17,7 @@ const DefaultCityCard: React.FC<DefaultCityCardProps> = ({ cityName, temperature
         <h3>{cityName}</h3>
         <p>{day}</p>
         <p>{currentTime}</p>
-        
+
       </div>
       {getWeatherIcon(description)}
       <p className='temp-item'>{temperature} °C</p>

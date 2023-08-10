@@ -35,9 +35,9 @@ const MainCardDesk: React.FC<MainCardDeskProps> = ({ cityName, }) => {
       <div className="card-desk">
         {currentCity ? (
           <>
-            
+
             <div className='card-popup'>
-             <TemperatureIcon/>
+              <TemperatureIcon />
             </div>
 
             <div >

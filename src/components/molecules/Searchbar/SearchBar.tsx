@@ -8,7 +8,7 @@ import './searchbar.css'
 const SearchBar: React.FC = () => {
   const [city, setCity] = useState('');
   const dispatch = useAppDispatch();
-  // const currentCity = useAppSelector((state) => state.weather.currentCity);
+
 
   const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
     setCity(event.target.value);

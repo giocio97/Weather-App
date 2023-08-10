@@ -6,7 +6,7 @@ interface HourlyForecast {
     description: string;
 }
 
- export interface DailyForecast {
+export interface DailyForecast {
     date: string;
     hourly: HourlyForecast[];
 }
@@ -18,8 +18,8 @@ interface Props {
 const DailyForecastTimeline: React.FC<Props> = ({ dailyForecast }) => {
     return (
         <div className="hours-timeline">
-            
-                <ul className='timeline'>
+
+            <ul className='timeline'>
                 {dailyForecast.hourly.map((hourForecast, index) => (
                     <li key={index} className='li '>
                         <div className="timestamp">
@@ -31,11 +31,11 @@ const DailyForecastTimeline: React.FC<Props> = ({ dailyForecast }) => {
                         </div>
 
                     </li>
-                    ))}
-                </ul>
+                ))}
+            </ul>
 
 
-            
+
 
         </div >
     );
