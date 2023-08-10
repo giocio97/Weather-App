@@ -27,13 +27,13 @@ const SearchBar: React.FC = () => {
 
 
   return (
-    <div>
+    
       <form onSubmit={handleSubmit}>
         <input type="text" value={city} onChange={handleChange} placeholder="ex: Miami" />
         <button type="submit"> <CgSearch/></button>
       </form>
 
-    </div>
+    
   );
 };
 
