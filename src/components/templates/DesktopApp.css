@@ -121,7 +121,7 @@
 .sez-title {
     font-size: 25px;
     color: rgb(3, 3, 109);
-    margin-left: 20px;
+    margin-left: 60px;
     padding: 5px;
 
 }
@@ -130,7 +130,8 @@
 .local {
     display: flex;
     flex-direction: column;
-    margin: 5px;
+    align-items: center;
+   
     
 
 }
