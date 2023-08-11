@@ -62,7 +62,7 @@ export const fetchWeatherData = async (city: string): Promise<WeatherData> => {
     const currentTimeApi = dt + timezone;
 
     const currentTime = new Date(currentTimeApi * 1000);
-    const localOffset = new Date().getTimezoneOffset() * 60 * 1000; // Calcolo dello spostamento locale
+    const localOffset = new Date().getTimezoneOffset() * 60 * 1000; 
     const localTime = new Date(currentTime.getTime() - localOffset);
 
     const hours = localTime.getHours();
