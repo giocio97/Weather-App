@@ -17,7 +17,7 @@ const CityList: React.FC<CityListProps> = ({ onCityClick }) => {
 
 
 
-  const defaultCities = ['Rome', 'Milan', 'London'];
+  const defaultCities = ['Rome', 'Milan', 'Turin'];
   const [lastRequestTime, setLastRequestTime] = useState<number>(0);
   const requestInterval = 2000; // 2 secondi
 
