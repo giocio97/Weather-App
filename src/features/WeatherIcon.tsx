@@ -30,6 +30,12 @@ export const getWeatherIcon = (description: string) => {
       case 'thunderstorm':
         return <img alt='thunderstorm'className="weather-icon" src='https://openweathermap.org/img/wn/11d@2x.png' />;
 
+        case 'thunderstorm with heavy rain':
+        return <img alt='thunderstorm'className="weather-icon" src='https://openweathermap.org/img/wn/11d@2x.png' />;
+
+        case 'thunderstorm with light rain':
+        return <img alt='thunderstorm'className="weather-icon" src='https://openweathermap.org/img/wn/11d@2x.png' />;
+
       case 'snow':
         return <img alt='snow'className="weather-icon" src='https://openweathermap.org/img/wn/13d@2x.png' />;
 

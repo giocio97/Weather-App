@@ -23,7 +23,7 @@
 
 .card-popup {
   position: absolute;
-  top: 70px;
+  top: 34px;
   left: -40px;
   display: flex;
   flex-direction: column;

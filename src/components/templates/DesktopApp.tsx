@@ -26,8 +26,10 @@ const DesktopApp: React.FC = () => {
         <div className="container-fluid">
             <div className="row">
                 <div className="col-9">
-                    <div className="col-12 box">
-                        <MainCardDesk cityName={selectedCity} />
+                    <div className='p-box'>
+                        <div className="col-12 box">
+                            <MainCardDesk cityName={selectedCity} />
+                        </div>
                     </div>
                     <div className="col-12">
                         <div className="row">
@@ -68,16 +70,20 @@ const DesktopApp: React.FC = () => {
                 <div className="col-3">
                     <CityList onCityClick={handleCityClick} />
 
-                    <h4 className='sez-title'>Search</h4>
-                    <div className='sez-search'>
+                    <div className='search-local'>
+                        <h4 className='sez-title'>Search</h4>
+
 
                         <SearchBar />
-                    </div>
-                    <h4 className='sez-title'>Localization</h4>
-                    <div className='local'>
+
+                        <h4 className='sez-title'>Localization</h4>
+
 
                         <AddLocalization />
                     </div>
+
+
+
                 </div>
             </div>
         </div>

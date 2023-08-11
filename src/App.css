@@ -93,20 +93,10 @@ body {
   text-align: center;
 }
 
-.daily-forecast-timeline {
-  margin-bottom: 20px;
-}
 
-.vertical-timeline {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
 
-.timeline-item {
-  border: 1px solid #ccc;
-  padding: 10px;
-}
+
+
 
 
 
